@@ -1,0 +1,359 @@
+{
+	"id": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+	"name": "Todolist",
+	"description": "",
+	"order": [
+		"8a972d42-d15c-571e-3418-7cb33d5e8400",
+		"9ef4bbdd-d7b0-4d3f-3ef9-955ecb3bf01c",
+		"fd8de386-04b1-bea2-cec6-acf37ecc954a",
+		"6ae5ccfa-006c-d61a-4ba1-92479039527a",
+		"d6d58a5c-f4fe-580a-2b4f-43c6694e73a2",
+		"5ab3dcb2-4247-9cb1-8df0-c667bb2f5f31",
+		"0c89a4d8-ab75-d8fe-a3f7-d57589a0189a",
+		"25178a00-dee9-f23c-8973-00a913ad3b1e",
+		"6f9dd6c5-d18b-4c54-2e44-026084b3b33a",
+		"802aa357-a5c3-2508-8b3c-502a2f88cbfc",
+		"e0ef8400-efd3-84da-cba8-5a87402647e5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1574416942247,
+	"owner": "9420737",
+	"public": false,
+	"requests": [
+		{
+			"id": "0c89a4d8-ab75-d8fe-a3f7-d57589a0189a",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList/28",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete taskList by Id",
+			"description": "Delete a taskList by his Id for a connected user (auth_token in Header).",
+			"descriptionFormat": "html",
+			"time": 1574427734193,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "25178a00-dee9-f23c-8973-00a913ad3b1e",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList/29/tasks",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574428342841,
+			"name": "Get all tasks",
+			"description": "Get all tasks of one taskList by his Id for a connected user (auth_token in Header).",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"My Home list review\"\n}"
+		},
+		{
+			"id": "5ab3dcb2-4247-9cb1-8df0-c667bb2f5f31",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList/28",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574420232409,
+			"name": "Get taskList by ID",
+			"description": "Get a taskList by his Id for a connected user (auth_token in Header).",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"My Home list review\"\n}"
+		},
+		{
+			"id": "6ae5ccfa-006c-d61a-4ba1-92479039527a",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get all taskLists",
+			"description": "Get all taskList for a connected user (auth_token in Header).",
+			"descriptionFormat": "html",
+			"time": 1574419414325,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"title\": \"My Home list\"\n}"
+		},
+		{
+			"id": "6f9dd6c5-d18b-4c54-2e44-026084b3b33a",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList/29/task",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create a task",
+			"description": "Create one task (\"content\" set in Body) for one taskList identified by his id for a connected user (\"auth_token\" set in Header).",
+			"descriptionFormat": "html",
+			"time": 1574428321641,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"content\": \"finish front todolist\"\n}"
+		},
+		{
+			"id": "802aa357-a5c3-2508-8b3c-502a2f88cbfc",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/task/7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574429332463,
+			"name": "Update a task",
+			"description": "Update one task by his Id for a connected user (auth_token in Header).",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"content\" : \"change the content same list but done\",\n\t\"status\" : \"done\",\n\t\"id_tasklist\" : \"29\"\n}"
+		},
+		{
+			"id": "8a972d42-d15c-571e-3418-7cb33d5e8400",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/medialis/todolist/api/user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574418827275,
+			"name": "Create a user",
+			"description": "Create a new user with username and password in Body using logout method.",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\" : \"root\",\n\t\"password\" : \"Root123*\"\n}"
+		},
+		{
+			"id": "9ef4bbdd-d7b0-4d3f-3ef9-955ecb3bf01c",
+			"headers": "username: root\npassword: Root123*\n",
+			"headerData": [
+				{
+					"key": "username",
+					"value": "root",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "Root123*",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/authToken",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get token of user",
+			"description": "Login a user with username and password in Header using login method.",
+			"descriptionFormat": "html",
+			"time": 1574418801172,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\" : \"root\",\n\t\"password\" : \"Root123*\"\n}"
+		},
+		{
+			"id": "d6d58a5c-f4fe-580a-2b4f-43c6694e73a2",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList/28",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574420112019,
+			"name": "Update taskList",
+			"description": "Update a taskList (Title) for a connected user (auth_token in Header).",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"My Home list review\"\n}"
+		},
+		{
+			"id": "e0ef8400-efd3-84da-cba8-5a87402647e5",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/task/7",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete a task",
+			"description": "Delete one task by his Id for a connected user (auth_token in Header).",
+			"descriptionFormat": "html",
+			"time": 1574429354182,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "fd8de386-04b1-bea2-cec6-acf37ecc954a",
+			"headers": "auth_token: mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=\n",
+			"headerData": [
+				{
+					"key": "auth_token",
+					"value": "mO2F0rED4dVF8u5jvRvoekH4C/oFLgzsOpjXeiEBVq4=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/medialis/todolist/api/taskList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574427903832,
+			"name": "Create a taskList",
+			"description": "Create a taskList for a connected user (auth_token in Header), need a \"title\" in Body request.",
+			"collectionId": "56eb840e-3d58-f95d-ec81-ce00a5b36d02",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"My home list\"\n}"
+		}
+	]
+}

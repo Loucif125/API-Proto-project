@@ -1,0 +1,11 @@
+#fichier de parametrage,
+RewriteEngine On
+
+
+#condition de reecriture de l'url pour conserver les parametres d'origine
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#redirige toutes les urls vers ./index.php
+RewriteRule ^(.*)$ index.php?url=$1 [NC,L]
+
