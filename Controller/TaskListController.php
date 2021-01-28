@@ -94,7 +94,6 @@ class TaskListController
 
         return new HttpResponseModel('200', 'Content-Type: application/json', $taskLists);
     }
-
     public function getUserTaskListById($header, $taskListId) {
         $userFound = \AuthenticationService::getInstance()->checkUserAuthentification($header);
 
