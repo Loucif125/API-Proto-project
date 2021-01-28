@@ -114,7 +114,7 @@ class AuthenticationService
     }
 
     private function encodePassword($password) {
-        $encodePassword = md5($password);
+        $encodePassword = sha1($password);
         return $encodePassword;
     }
 
