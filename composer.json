@@ -1,0 +1,9 @@
+{
+  "require": {
+    "friendsofphp/php-cs-fixer": "v2.18.2"
+  },
+
+  "scripts": {
+    "php-cs-fixer": "php-cs-fixer --config=./.php_cs"
+  }
+}
