@@ -1,6 +1,6 @@
 <?php
 
-class FormatException extends \Exception
+class FormatException extends Exception
 {
     private $HttpCode = 400;
 
@@ -9,7 +9,8 @@ class FormatException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }

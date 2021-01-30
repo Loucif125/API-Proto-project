@@ -1,6 +1,6 @@
 <?php
 
-class NotFoundException extends \Exception
+class NotFoundException extends Exception
 {
     private $HttpCode = 404;
 
@@ -9,7 +9,8 @@ class NotFoundException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }

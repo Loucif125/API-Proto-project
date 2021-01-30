@@ -1,6 +1,6 @@
 <?php
 
-class UnauthorizedException extends \Exception
+class UnauthorizedException extends Exception
 {
     private $HttpCode = 401;
 
@@ -9,7 +9,8 @@ class UnauthorizedException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }
