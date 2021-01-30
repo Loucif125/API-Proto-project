@@ -13,7 +13,8 @@ class TaskModel implements Serializable
     private $created = null;
     private $updated = null;
 
-    public function serialize() {
+    public function serialize()
+    {
         return array(
             'task_id' => $this->taskId,
             'user_id' => $this->userId,
@@ -25,7 +26,8 @@ class TaskModel implements Serializable
             );
     }
 
-    public function unserialize($pdoResults) {
+    public function unserialize($pdoResults)
+    {
         $this->setTaskId($pdoResults['task_id']);
         $this->setUserId($pdoResults['user_id']);
         $this->setTaskListId($pdoResults['tasklist_id']);
@@ -35,7 +37,8 @@ class TaskModel implements Serializable
         $this->setDateUpdate($pdoResults['updated']);
     }
 
-    public function setTaskModel($userId, $taskListId, $content, $status) {
+    public function setTaskModel($userId, $taskListId, $content, $status)
+    {
         $this->setUserId($userId);
         $this->setTaskListId($taskListId);
         $this->setContent($content);
@@ -153,5 +156,4 @@ class TaskModel implements Serializable
     {
         $this->updated = $date_update;
     }
-
 }

@@ -1,6 +1,6 @@
 <?php
 
-class ConflictException extends \Exception
+class ConflictException extends Exception
 {
     private $HttpCode = 409;
 
@@ -9,7 +9,8 @@ class ConflictException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }

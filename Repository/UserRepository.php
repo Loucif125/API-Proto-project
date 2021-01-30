@@ -6,7 +6,8 @@ class UserRepository extends PdoHelper
 {
     private static $instance = null;
 
-    public static function getInstance() {
+    public static function getInstance()
+    {
         if (self::$instance) {
             return self::$instance;
         }
@@ -14,7 +15,8 @@ class UserRepository extends PdoHelper
         return self::$instance;
     }
 
-    public function createUser($user) {
+    public function createUser($user)
+    {
         //request
         $request =  parent::getPdo()->prepare("INSERT INTO `user` (`user_id`, `username`, `password`, `token`) VALUES (?, ?, ?, ?)");
         $result = $request->execute(array($user->getUserId(), $user->getUsername(), $user->getPassword(), $user->getToken()));
@@ -50,8 +52,8 @@ class UserRepository extends PdoHelper
         if ($pdoresults != null && isset($pdoresults[0])) {
             $user->setUserByRequest($pdoresults[0]);
             return $user;
-        }
-        else
+        } else {
             return null;
+        }
     }
 }

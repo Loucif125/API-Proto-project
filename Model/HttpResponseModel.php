@@ -80,6 +80,4 @@ class HttpResponseModel
     {
         $this->message = $message;
     }
-
-
 }

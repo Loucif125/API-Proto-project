@@ -1,6 +1,6 @@
 <?php
 
-class UnknownException extends \Exception
+class UnknownException extends Exception
 {
     private $HttpCode = 520;
 
@@ -9,7 +9,8 @@ class UnknownException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }

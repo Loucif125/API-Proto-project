@@ -1,6 +1,6 @@
 <?php
 
-class RouterException extends \Exception
+class RouterException extends Exception
 {
     private $HttpCode = 501;
 
@@ -9,7 +9,8 @@ class RouterException extends \Exception
         parent::__construct($message, $code, $previous);
     }
 
-    public function getHttpCode (){
+    public function getHttpCode()
+    {
         return $this->HttpCode;
     }
 }

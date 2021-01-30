@@ -5,19 +5,20 @@
  */
 class TaskListModel implements Serializable
 {
-
     private $userId = 0;
     private $tasklistId = 0;
     private $title = null;
 
-    public function serialize() {
+    public function serialize()
+    {
         return array(
                 'user_id' => $this->userId,
                 'tasklist_id' => $this->tasklistId,
                 'title' => $this->title
             );
     }
-    public function unserialize($pdoResults) {
+    public function unserialize($pdoResults)
+    {
         $this->setUserId($pdoResults['user_id']);
         $this->setTasklistId($pdoResults['tasklist_id']);
         $this->setTitle($pdoResults['title']);
@@ -77,6 +78,4 @@ class TaskListModel implements Serializable
     {
         $this->title = $title;
     }
-
-
 }

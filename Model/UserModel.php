@@ -5,13 +5,13 @@
  */
 class UserModel
 {
-
     private $userId = 0;
     private $username = null;
     private $password = null;
     private $token = null;
 
-    public function serialize() {
+    public function serialize()
+    {
         return array(
             'user_id' => $this->userId,
             'username' => $this->username,
@@ -19,7 +19,8 @@ class UserModel
             'auth_token' => $this->token
         );
     }
-    public function unserialize($pdoResults) {
+    public function unserialize($pdoResults)
+    {
         $this->setUserId($pdoResults['user_id']);
         $this->setUsername($pdoResults['username']);
         $this->setPassword($pdoResults['password']);
@@ -108,5 +109,4 @@ class UserModel
     {
         $this->userId = $userId;
     }
-
 }
