@@ -58,7 +58,3 @@ cd todolist
 * Run your API on localhost server (Ex: WampServer64).
 
 * Configure the parameter of your server on `./config.php`
-
-* Test the running API with :
-  * [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=fr) and the file `Todolist_postman_collection`;
-  * or my project [todolist-app](https://github.com/liliaze/todolist-app).
