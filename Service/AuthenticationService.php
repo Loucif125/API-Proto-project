@@ -122,6 +122,11 @@ class AuthenticationService
         return $encodePassword;
     }
 
+    public function remove($username) {
+
+        return null;
+    }
+
     private function generateToken()
     {
         return ($this->Salt());
