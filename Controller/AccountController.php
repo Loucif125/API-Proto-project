@@ -41,4 +41,17 @@ class AccountController
             return new HttpResponseModel('200', 'Content-Type: application/json', $array);
         }
     }
+
+    public function remove($data)
+    {
+        if (!isset($data['username']) || !isset($data['password'])) {
+            throw new FormatException('Bad username or password');
+        }
+
+        //Remove user account
+        $token = AuthenticationService::getInstance()->login($data['username'], $data['password']);
+        if ($token) {
+            AuthenticationService::getInstance()->remove($data['username']);
+        }
+    }
 }
